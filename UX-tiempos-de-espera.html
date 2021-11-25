@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        /* li {
+            margin: 0 20px;
+        } */
+        a {
+            text-decoration: none;
+        }
+        .nav {
+            display: flex;
+        }
+        .nav li:hover {
+            font-weight: bold;
+        }
+        .nav li:hover > ul {
+            opacity: 1;
+            transition: opacity 400ms;
+            transition-delay: 300ms;
+            font-weight: 400;
+        }
+        .nav li ul {
+            display: block;
+            opacity: 0;
+            position: absolute;
+            transition: opacity 800ms;
+            transition-delay: 600ms;
+        }
+        .nav li ul li {
+            position: relative;
+            left: 15px;
+        }
+        .level-1 {
+            margin: 0 25px;
+        }
+        .level-1 ul {
+            padding: 0 10px;
+        }
+        .level-1:hover .level-2 {
+            padding-left: 0;
+        }
+        .level-2 ul {
+            padding: 0 35px;
+        }
+        .level-2:hover .level-3 {
+            padding-left: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li class="level-1"><a href="/">Mujer</a>
+            <ul>
+                <li class="level-2"><a href="">Camisetas</a></li>
+                <li class="level-2"><a href="">Pantalones</a></li>
+                <li class="level-2"><a href="">Shorts</a>
+                    <ul>
+                        <li class="level-3"><a href="">Algodón</a> </li> 
+                        <li class="level-3"><a href="">Poliester</a></li>
+                        <li class="level-3"><a href="">Jean</a></li>
+                    </ul>
+                </li>
+                <li class="level-2"><a href="">Faldas</a></li>
+                <li class="level-2"><a href="">Ropa íntima</a></li>
+            </ul>
+        </li>
+        <li class="level-1"><a href="/">Hombre</a>
+            <ul>
+                <li class="level-2"><a href="">Camisetas</a></li>
+                <li class="level-2"><a href="">Pantalones</a></li>
+                <li class="level-2"><a href="">Shorts</a>
+                    <ul>
+                        <li class="level-3"><a href="">Algodón</a> </li> 
+                        <li class="level-3"><a href="">Poliester</a></li>
+                        <li class="level-3"><a href="">Jean</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="level-1"><a href="/">Niños</a></li>
+    </ul>
+</body>
+</html>
