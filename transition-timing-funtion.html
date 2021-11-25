@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container:hover .circle {
+            transform: translateX(200px);
+        }
+        .circle {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+        }
+        .one {
+            background: #CD5C5C;
+            transition: transform 1s;
+            transition-delay: 1s;
+            transition-timing-function: linear;
+        }
+        .two {
+            background: #F08080;
+            transition: transform 1.5s;
+            transition-delay: 1.5s;
+            transition-timing-function:ease;
+        }
+        .three {
+            background: #FA8072;
+            transition: transform 2s;
+            transition-delay: 2s;
+            transition-timing-function:cubic-bezier(0.95, 0.05, 0.795, 0.035);
+        }
+        .four {
+            background: #E9967A;
+            transition: transform 2.5s;
+            transition-delay: 2.5s;
+            transition-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        }
+        .five {
+            background: #FFA07A;
+            transition: transform 3s;
+            transition-delay: 3s;
+            transition-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+        .six {
+            background: #f4c5b3;
+            transition: transform 3.5s;
+            transition-delay: 3.5s;
+            transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+        <div class="circle three"></div>
+        <div class="circle four"></div>
+        <div class="circle five"></div>
+        <div class="circle six"></div>
+    </div>
+</body>
+</html>
